@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>콜</title>
+	<style type="text/css">
+		body{margin: 0;background-color: black;}
+		.wrap{margin: auto; text-align: center;width: 1000px;}
+		section{height: 2000px;}
+		.back{background-image: url(b.png);background-size: cover; position: relative;}
+		.star{display: block; position: absolute; top: 100px; left: -30px; opacity: 0.8;}
+		.clock{display: block;position: absolute; z-index: 10; right: 0px;width: 1000px;}
+		.white{display: block;position: fixed; width:1500px; right: 400px; height: 1000px;opacity: 0.8;z-index: 2;}
+		.flowers{display: block; position: absolute; z-index: 11; right: 0px;}
+		.mo {display: block; position: fixed; z-index: 100;top:400px; left: 600px;}
+		.home2 {display: block; position: absolute; z-index: 1; top:200px; left: 50px;}
+		.man{display: block; position: absolute; z-index: 12;top:800px; left: 0px;
+			animation: man 4s infinite cubic-bezier(1,-0.51,.34,.33)alternate}
+		.star1{display: block; position: absolute; z-index: 13;top:400px; left: 600px;
+			animation: star 4s infinite cubic-bezier(.84,.2,.48,.87) alternate}
+		.tu{display: block; position: absolute; z-index: 13;top:600px; left: 650px;}
+		.tustar{display: block; position: absolute; z-index: 13;top:560px; left: 650px;}
+	
+		@keyframes star{to{transform: rotate(360deg);left: 200px;width: 500px}}
+		@keyframes man{to{transform: rotate(60deg);right: 200px;}}
+	</style>
+</head>
+
+<body>
+<div class="wrap">
+	<section class="back">
+	<img src="star.png" class="star">
+	<img src="clock.png" class="clock">
+	<img src="clock2.png" class="clock" style="opacity: 0.5; right: 100px;z-index: 9; top:20px;">
+	<img src="w.png" class="white">
+	<img src="flowers.png" class="flowers">
+	<img src="momo.png" class="mo">
+	<img src="home2.png" class="home2">
+	<img src="man.png" class="man">
+	<img src="man2.png" class="man" style="z-index: 90">
+	<img src="star1.png" class="star1">
+	<img src="tu.png" class="tu">
+	<img src="tustar.png" class="tustar">
+	</section>
+</div>
+</body>
+</html>
